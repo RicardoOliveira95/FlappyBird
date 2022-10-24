@@ -168,7 +168,7 @@ public class FlappyB implements ActionListener, MouseListener, KeyListener{
 	public void actionPerformed(ActionEvent e) {
 		ticks++;
 		
-		if(started) {
+		if(started && !gameOver) {
 			for(int i=0;i<columns.size();i++) {
 				Rectangle column= columns.get(i);
 				
